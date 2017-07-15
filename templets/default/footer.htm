@@ -1,0 +1,256 @@
+<div class="footer">
+  <div class="container">
+    <div class="left fl">{dede:global.cfg_powerby/}</div>
+    <div class="right fr"><a href="http://www.dede58.com/">网站建设：织梦58</a></div>
+  </div>
+</div>
+<script>
+
+	$(function(){
+
+		$('.header .nav .li1').hover(function(){
+
+			$(this).addClass('hover');
+
+			$('.ul1',this).css('bottom',0-$('.ul1',this).height());
+
+		},function(){
+
+			$(this).removeClass('hover');
+
+			$('.ul1',this).css('bottom',0);
+
+		});
+
+	})
+
+	jQuery(function($){
+
+		'use strict';
+
+		(function () {
+
+			var $frame = $('.hot-event2 .inul');
+
+			var $wrap  = $frame.parent();
+
+			$frame.sly({
+
+				horizontal: 1,
+
+				itemNav: 'forceCentered',
+
+				smart: 1,
+
+				activateMiddle: 1,
+
+				mouseDragging: 1,
+
+				touchDragging: 1,
+
+				releaseSwing: 1,
+
+				startAt: 0,
+
+				cycleBy:"pages",
+
+				cycleInterval:5000,
+
+				pauseOnHover:1,
+
+				scrollBy: 1,
+
+				speed: 600,
+
+				elasticBounds: 1,
+
+				easing: 'easeOutExpo',
+
+				dragHandle: 1,
+
+				dynamicHandle: 1,
+
+				clickBar: 1,
+
+				pagesBar: $wrap.find('.hot-pages ul'),
+
+				activatePageOn: 'click'
+
+			});
+
+		}());
+
+	});
+
+
+
+	jQuery(function($){
+
+		'use strict';
+
+		(function () {
+
+			var $frame = $('.sly1');
+
+			if($frame.length){
+
+				var sly = new Sly($frame, {
+
+					horizontal:0,
+
+					itemNav: 'forceCentered',
+
+					smart: 1,
+
+					activateMiddle: 1,
+
+					scrollSource:null,
+
+					mouseDragging: 1,
+
+					touchDragging: 1,
+
+					releaseSwing: 1,
+
+					startAt: 0,
+
+					cycleBy:"pages",
+
+					cycleInterval:5000,
+
+					pauseOnHover:1,
+
+					scrollBy: 1,
+
+					speed: 600,
+
+					elasticBounds: 1,
+
+					easing: 'easeOutExpo',
+
+					dragHandle: 1,
+
+					dynamicHandle: 1,
+
+					clickBar: 1
+
+				}).init();
+
+
+
+				$('.sly1 .datec').click(function(){
+
+					sly.prev();
+
+				});
+
+				$('.sly1 .dateb').click(function(){
+
+					sly.next();
+
+				});
+
+			}
+
+
+
+
+
+		}());
+
+	});
+
+
+
+	jQuery(function($){
+
+		'use strict';
+
+		(function () {
+
+			var $frame = $('.sly3 .inul');
+
+			$frame.sly({
+
+				horizontal: 1,
+
+				itemNav: 'forceCentered',
+
+				smart: 1,
+
+				activateMiddle: 1,
+
+				mouseDragging: 1,
+
+				touchDragging: 1,
+
+				releaseSwing: 1,
+
+				startAt: 0,
+
+				cycleBy:"pages",
+
+				cycleInterval:5000,
+
+				pauseOnHover:1,
+
+				scrollBy: 1,
+
+				speed: 600,
+
+				elasticBounds: 1,
+
+				easing: 'easeOutExpo',
+
+				dragHandle: 1,
+
+				dynamicHandle: 1,
+
+				clickBar: 1,
+
+				pageBuilder:
+
+						function (index) {
+
+							return '<li><i></i></li>';
+
+						},
+
+				pagesBar: $('.sly3 .sly-pages'),
+
+				activatePageOn: 'click'
+
+			});
+
+		}());
+
+	});
+
+
+
+</script> 
+<script type="text/javascript">
+
+  var _paq = _paq || [];
+
+  _paq.push(["trackPageView"]);
+
+  _paq.push(["enableLinkTracking"]);
+
+
+
+  (function() {
+
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.68bee.com/";
+
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+
+    _paq.push(["setSiteId", "15"]);
+
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+
+  })();
+
+</script>

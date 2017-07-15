@@ -1,0 +1,109 @@
+<div class="header">
+  <div class="container">
+    <div class="fl">
+      <div class="logo"> <a href="/"><img src="/images/logo.png" alt=""/></a> </div>
+    </div>
+    <div class="fr">
+      <ul class="nav">
+        <li class="li1 "><a  class="a1" href="/">网站首页</a></li>
+        {dede:channelartlist typeid='top' currentstyle='active'}
+        <li class="li1 {dede:field.currentstyle/}"> <a class="a1" href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+          <ul class="ul1">
+            {dede:channel type='son' noself='true'}
+            <li class="li3 "><a href="[field:typelink/]">[field:typename/]</a></li>
+            {/dede:channel}
+          </ul>
+        </li>
+        {/dede:channelartlist} 
+        <!--<li class="li2"><a  class="a1" href="http://www.jingxinongye.com/index.php?m=member&c=index&a=card">会员激活</a><i></i></li>-->
+      </ul>
+    </div>
+  </div>
+</div>
+<style>
+.cq-cont .cqc-in {
+  width: 1100px;
+  height: 650px;
+  margin: 0 auto;
+  background: none;
+  position: relative;
+  padding: 0;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.cq-cont .cqc-in .cqc-imain {
+  background: url(/images/cqc-in-bg.png) repeat;
+  width: 810px;
+   height: auto;
+   padding: 25px 22px;
+   float: right;
+}
+.cqc-imain .cqc-imainr {
+  width: 810px;
+  height: 587px;
+  float: right;
+}
+.cqc-leftnav{
+    float: left;
+    width: 224px;
+    background: #fff;
+}
+.cqc-leftnav .top{
+    background: url("/images/leftnavtopbg.png") no-repeat left top;
+    height: 137px;
+    position: relative;
+    z-index: 1;
+}
+.cqc-leftnav .top span{
+    display: block;
+    padding-top:60px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Microsoft YaHei', 'Hiragino Sans GB', 'STHeiti', Tahoma, 'SimHei', sans-serif;
+    font-size: 20px;
+}
+.cqc-leftnav{
+    line-height: 45px;
+}
+.cqc-leftnav ul{
+    margin-top: -20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: url("/images/leftnavbg.png") no-repeat left bottom;
+}
+.cqc-leftnav ul li b{
+    font-weight: 200;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 14px;;
+}
+.cqc-leftnav ul li{
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+.cqc-leftnav ul li a{
+    font-family: 'Microsoft YaHei', 'Hiragino Sans GB', 'STHeiti', Tahoma, 'SimHei', sans-serif;
+    font-size: 14px;
+    padding-left:35px;
+    color: #666666;
+    display: block;
+}
+.cqc-leftnav ul li a i{
+    position: absolute;
+    display: block;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+    background: #FDA505;
+    display: none;
+}
+.cqc-leftnav ul li.hover a i{
+    display: block;
+}
+.cqc-leftnav ul li.hover a,
+.cqc-leftnav ul li a:hover{
+    background: #85A532;
+    color: #fff;
+}
+</style>

@@ -1,0 +1,10 @@
+<div class="cqc-leftnav">
+  <div class="top"> <span>{dede:field name='typeid' function="GetTopTypename(@me)" /}</span> </div>
+  <ul>
+    {dede:channel type='son' currentstyle="
+    <li class='hover'><a href='~typelink~'><i></i><span>~typename~</span><b> > </b></a></li>
+    "}
+    <li><a href="[field:typeurl/]"><i></i><span>[field:typename/]</span><b> > </b></a></li>
+    {/dede:channel}
+  </ul>
+</div>

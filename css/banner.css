@@ -1,0 +1,12 @@
+﻿div { display: block; margin: 0; padding: 0; border: 0 none; outline: 0; background: transparent; font-weight: normal; font-style: normal; }
+#inner { width: 204px; height:212px; margin: 0 auto; }
+.hot-event { width:214px; height:212px; margin:0; padding:0; position: relative; }
+
+.hot-event .switch-tab { width:206px; height:22px; padding-top:8px; padding-right:8px; background:url(../images/cqc-pic-bg.png) repeat; position:absolute; left:0; bottom:0; z-index:100; line-height:12px; text-indent:8px; font-family:"新宋体"; font-size:12px; color:#fff;}
+           .switch-tab .switch-r{ height:22px; margin:0; padding:0; float:right;}
+		   
+.hot-event .switch-tab .switch-r a, .hot-event .switch-tab .switch-r .current { margin: 0 2px; display: inline-block; width: 13px; height: 13px; background-image:url(../images/cqc-pic-dian.png); font: 0/0 arial; color: transparent; overflow: hidden; vertical-align: top; }
+.hot-event .switch-tab .switch-r .current { background:url(../images/cqc-pic-dian2.png) no-repeat;}
+    
+.hot-event .event-item { height: 214px; width:212px; position: absolute; z-index: 1; left: 0; top: 0; }
+.hide-clip { position: absolute!important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); padding: 0!important; border: 0!important; height: 1px!important; line-height: 0!important; width: 1px!important; overflow: hidden; }

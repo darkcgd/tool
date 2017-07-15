@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by dede58.com" />
+<link rel="stylesheet" href="/css/JXbase.css"/>
+<link rel="stylesheet" href="/css/layout.css"/>
+<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="/css/component.css" />
+<script src="/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="/js/modernizr.custom.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/sly.min.js"></script>
+<link href="/css/css1.css" rel="stylesheet" type="text/css">
+<link href="/css/banner.css" rel="stylesheet" type="text/css">
+<Style>
+.z_content, .z_content .container, .z_banner, .js .boxgallery, .js .panel, html, body, .container2 {
+	min-height: 0px;
+}
+</Style>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div class="z_banner">
+  <div id="boxgallery" class="boxgallery" data-effect="effect-2"> {dede:arclist titlelen='' row='8' typeid='19'}
+    <div class="panel"><img src="[field:litpic/]"/></div>
+    {/dede:arclist} </div>
+</div>
+<div class="z_content">
+  <div class="container">
+    <div class="z_by_box">
+      <div class="z_by">
+        <div class="zm_a">绿色天然，“惊喜”一夏</div>
+        <div class="zm_c"><a href="/tiyan">开启体验之旅</a></div>
+      </div>
+    </div>
+    <div class="z_nr_box">
+      <div class="z_nr">
+        <div class="z_left fl">
+          <div class="sly3">
+            <div class="inul">
+              <ul>
+                {dede:arclist titlelen='' row='3' typeid='20'}
+                <li> <a href="javascript:;"> <img src="[field:litpic/]" width="200" height="286" alt=""/>
+                  <div class="sly-text"> <span class="sly-text1">[field:title/]</span>
+                    <hr/>
+                  </div>
+                  </a> </li>
+                {/dede:arclist}
+              </ul>
+            </div>
+            <ul class="sly-pages">
+            </ul>
+          </div>
+        </div>
+        <div class="z_center fl">
+          <div class="z_top">
+            <div class="z_wz"> <span class="bt"> <span class="m_zw fl">关于我们</span> <span class="m_en fl">IMPRESSION</span> </span> <span class="nr"> <a href="/about">{dede:sql sql='Select content from dede_arctype where id=3'} 
+              [field:content function='cn_substr(html2text(@me),240)'/]
+              {/dede:sql}...</a> </span> </div>
+            <div class="m_gja"></div>
+          </div>
+          <div class="z_bottom">
+            <div class="z_wz"> <span class="bt"> <span class="m_zw fl">京玺体验</span> <span class="m_en fl">EXPERIENCE</span> </span> <span class="nr"> <span class="m_tb fl"> <a href="/plus/view.php?aid=13"> <span class="cmtba cmtbe"></span> <span class="cmbt">&nbsp;采摘</span> </a> </span> <span class="m_tb fl"> <a href="/plus/view.php?aid=7"> <span class="cmtba cmtbb"></span> <span class="cmbt">&nbsp;垂钓</span> </a> </span> <span class="m_tb fl"> <a href="/plus/view.php?aid=12"> <span class="cmtba cmtbc"></span> <span class="cmbt">&nbsp;登山</span> </a> </span> <span class="m_tb fl" style="margin-right:0px;"> <a href="/plus/view.php?aid=6"> <span class="cmtba"></span> <span class="cmbt">无染寺</span> </a> </span> </span> </div>
+            <div class="m_gja"></div>
+          </div>
+        </div>
+        <div class="z_right fl">
+          <div class="z_top">
+            <div class="z_wz">
+              <ul>
+                {dede:arclist titlelen='36' row='4' typeid='6'}
+                <li> <a href="[field:arcurl/]"> <span class="m_xwbt fl">[field:title/]</span> <span class="m_nr fr">[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> </a> </li>
+                {/dede:arclist}
+              </ul>
+            </div>
+            <div class="m_gja"></div>
+          </div>
+          <div class="z_bottom">
+            <div class="z_wz">
+              <div class="z_lxl fl"> <span class="lxA">服务热线</span> <span class="lxB">{dede:global.cfg_sll/}</span> <span class="lxC"> <span class="left fl"><a href="#">微博</a></span> <span class="cent fl"><a href="/contact">微信</a></span> <span class="right fl"><a href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.cfg_qq/}&site=qq&menu=yes">QQ</a></span> </span> </div>
+              <div class="z_lxr fr"> </div>
+            </div>
+            <div class="m_gja"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/classie.js"></script> 
+<script src="/js/boxesFx.js"></script> 
+<script>new BoxesFx( document.getElementById( 'boxgallery' ) );</script> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>
